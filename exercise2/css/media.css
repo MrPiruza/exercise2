@@ -1,0 +1,155 @@
+@media screen and (max-width: 980px) {
+  .menu-bar ul{
+    display: none;
+  }
+  .menu-bar #drop-menu{
+    display: block;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+  .top-bar{
+    width: 835px;
+  }
+  #drop-menu-bar{
+    display: none;
+  }
+
+  .banner-box{
+    background: #fff;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  .banner-image{
+    width: 835px;
+    height: 380px;
+  }
+  .banner-box, .banner-image img{
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .news-bar-header{
+    height: 34px;
+  }
+  .news-bar-header h3 {
+    margin: 0px;
+    font-weight: normal;
+  }
+  .news-container{
+    height: 751px;
+  }
+  .news-box{
+width:  835px;
+}
+.first, .second, .third, .fourth {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    bottom: 0px;
+    height: 350px;
+    width: 405px;
+}
+.second, .fourth{
+  margin-left: 21.5px;
+}
+.third,.fourth{
+  margin-top: 25px;
+}
+.read-more, .pull-up{
+  width: 390px;
+  height: 62px;
+  top: 280px;
+  transition: 0s;
+  font-size: 31.5px;
+}
+.hover:hover .pull-up{
+  width: 390px;
+  height: 260px;
+  font-size: 31.5px;
+}
+.read-more h4 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+.news-image{
+  width: 405px;
+  height: 280px;
+}
+.news-image img{
+  width: 100%;
+}
+.video-header-bottom{
+display: none;
+}
+  .video-bar{
+    display: none;
+  }
+.featured{
+  width: 100%;
+  height: 638px;
+}
+  .featured-box{
+    width: 835px;
+  }
+  .featured-bar-header{
+    height: 67px;
+    line-height: 67px;
+  }
+  .featured-bar-header h3 {
+    margin-top: 0px;
+  }
+  .first-featured, .second-featured{
+    width: 835px;
+    height: 280px;
+  }
+    .first-featured img, .second-featured img{
+      width: 405px;
+      height: 280px;
+    }
+  .second-featured{
+    margin-top: 22px;
+    margin-left: 0px;
+  }
+  .first-featured-image, .second-featured-image{
+    width: 405px;
+    height: 100%;
+  }
+  .featured-read-more{
+    margin-right: -10px;
+    margin-top: 20px;
+  }
+  .featured-inner-text{
+    font-size: 21px;
+  }
+  .first-featured-text, .second-featured-text{
+    width: 355px;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 75px;
+    border-bottom-width: 50px;
+  }
+  .inner-text{
+    display: none;
+  }
+  .featured-inner-text{
+    margin-left: 0px;
+  }
+  .first-featured:hover .first-featured-text, .second-featured:hover .second-featured-text{
+    width: 355px;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 75px;
+    border-bottom-width: 50px;
+  }
+  .footer{
+    margin-top: 52px;
+  }
+  .footer-div{
+    width: 835px;
+  }
+}
+
+@media screen and (min-width: 965px) {
+  #drop-menu-bar{
+    display: none;
+  }
+}

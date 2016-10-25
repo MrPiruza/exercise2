@@ -4,11 +4,23 @@
     <meta charset="utf-8">
     <title>ვებ გვერდი</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
   </head>
 <body>
 <!-- menus bloki -->
     <div class="top-bar">
+      <div id="drop-menu-bar">
+        <ul>
+          <li><a href="index.html"><span>HOME</span></a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
       <div class="menu-bar">
+        <div id="drop-menu">
+            <img src="img/drop-menu.svg" alt="" onclick="dropMenu();" />
+        </div>
         <ul>
           <li><a href="index.html"><span class="grey">HOME</span></a></li>
           <li><a href="news.html">NEWS</a></li>
@@ -18,16 +30,16 @@
       </div>
       <div class="soc_iconBar">
         <div class="googlePlus">
-          <a href="#"><img src="img/google_plus.png" alt="google plus"></a>
+          <img src="img/google.svg" alt="google plus">
         </div>
         <div class="facebook">
-            <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
         </div>
         <div class="youtube">
-            <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+            <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
         </div>
         <div class="search-icon">
-            <a href="#"><img src="img/search_icon.png" alt="search icon"></a>
+            <a href="#"><img src="img/search_icon.svg" alt="search icon"></a>
         </div>
       </div>
     </div>
@@ -41,7 +53,7 @@
     <div class="banner-box">
       <div class="banner-image">
           <div class="triangle">
-            <img src="img\logo.svg" alt="logo" />
+            <img src="img/logo.svg" alt="logo" />
           </div>
           <div class="triangle-logo-text">
             <img src="img/logo-text.svg" alt="logo-text" />
@@ -53,21 +65,22 @@
 
 
     <div class="news-container">
-      <div class="news-box">
-        <div class="news-bar-header">
-          <span class="letter-bold">NEWS</span>
-          <span class="smallLetters"><a href="#">| view all news</a></span>
-        </div>
-        <div class="news-box-images">
+      <section class="news-box">
+          <div class="news-bar-header">
+            <!--<span class="letter-bold">NEWS</span>-->
+            <h3>NEWS</h3>
+            <span class="smallLetters"><a href="#">| view all news</a></span>
+          </div>
+          <div class="news-box-images">
             <article class="first hover">
                 <div class="first-news-image news-image">
                     <img src="img/01_news.jpg" alt="news" />
                 </div>
                 <div class="read-more">
-                    <span><a href="news.html">read more...</a></span>
+                    <h4><a href="news.html">read more...</a></h4>
                 </div>
                 <div class="first-news-text pull-up">
-                    <span>Analytics Information rev...</span>
+                    <h4>Analytics Information rev...</h4>
                 </div>
             </article>
             <article class="second hover">
@@ -75,10 +88,10 @@
                     <img src="img/02_featured.jpg" alt="news" />
                 </div>
                 <div class="read-more">
-                    <span><a href="news.html">read more...</a></span>
+                    <h4><a href="news.html">read more...</a></h4>
                 </div>
                 <div class="second-news-text pull-up">
-                    <span>Analytics Information rev...</span>
+                      <h4>Analytics Information rev...</h4>
                 </div>
             </article>
             <article class="third hover">
@@ -86,10 +99,10 @@
                     <img src="img/03_news.jpg" alt="news" />
                 </div>
                 <div class="read-more">
-                    <span><a href="news.html">read more...</a></span>
+                    <h4><a href="news.html">read more...</a></h4>
                 </div>
                 <div class="third-news-text pull-up">
-                    <span>Analytics Information rev...</span>
+                    <h4>Analytics Information rev...</h4>
                 </div>
             </article>
             <article class="fourth hover">
@@ -97,18 +110,18 @@
                     <img src="img/04_news.jpg" alt="news" />
                 </div>
                 <div class="read-more">
-                    <span><a href="news.html">read more...</a></span>
+                    <h4><a href="news.html">read more...</a></h4>
                 </div>
                 <div class="fourth-news-text pull-up">
-                    <span>Analytics Information rev...</span>
+                    <h4>Analytics Information rev...</h4>
                 </div>
             </article>
-        </div>
-        <div class="video-header-bottom">
-           <span class="video-header">VIDEOS</span>
+          </div>
+          <div class="video-header-bottom">
+           <h3 class="video-header">VIDEOS</h3>
            <span class="smallLetters"><a href="#">| view all videos</a></span>
          </div>
-      </div>
+      </section>
     </div>
 
 
@@ -133,19 +146,19 @@
         <div class="featured">
             <div class="featured-box">
               <div class="featured-bar-header">
-                <span class="letter-bold">FEATURED</span>
+                <h3>FEATURED</h3>
                 <span class="smallLetters"><a href="#">| view all featured</a></span>
               </div>
               <div class="featured-container">
                 <selection class="first-featured">
                     <div class="first-featured-image">
-                      <article>
+                      <div>
                         <img src="img/02_featured.jpg" alt="image" />
-                      </article>
+                      </div>
                     </div>
                     <div class="first-featured-text">
                       <article>
-                        <span class="inner-text">Analytics Information</span><br><br>
+                        <h4 class="inner-text">Analytics Information</h4>
                         <span class="smallLetters featured-inner-text">
                         Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit. Vestibulum est ligula,
@@ -153,19 +166,19 @@
                         Aenean interdum turpis odio, id fringilla
                         </span>
                         <br><br>
-                        <a href="#>"<span class="featured-read-more">read more..</span></a>
+                        <a href="#"><span class="featured-read-more">read more..</span></a>
                       </article>
                     </div>
                 </selection>
                 <selection class="second-featured">
                   <div class="second-featured-image">
-                    <article>
+                    <div>
                       <img src="img/03_news.jpg" alt="image" />
-                    </article>
+                    </div>
                   </div>
                   <div class="second-featured-text">
                     <article>
-                      <span class="inner-text">Analytics Information</span><br><br>
+                      <h4 class="inner-text">Analytics Information</h4>
                       <span class="smallLetters featured-inner-text">
                       Lorem ipsum dolor sit amet, consectetur
                       adipiscing elit. Vestibulum est ligula,
@@ -194,6 +207,24 @@
     </div>
     </div>
 
+
+<!-- javascript -->
+<script type="text/javascript">
+ function dropMenu(){
+    var menu = document.getElementById('drop-menu-bar');
+    var x = menu.style.display;
+    console.log(x);
+  if(x == 'block'){
+    menu.style.display = 'none';
+
+  }
+  else{
+     menu.style.display = 'block'
+   }
+
+  }
+
+</script>
 
 </body>
 

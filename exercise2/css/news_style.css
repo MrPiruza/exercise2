@@ -55,10 +55,7 @@ padding-left: 0px;
   display: inline-block;
 }
 .soc_iconBar img{
-  width: 25px;
-  height: 25px;
-}
-.search-icon img{
+  padding-top: 8px;
   width: 35px;
   height: 35px;
 }
@@ -244,24 +241,23 @@ clear: both;
 .first-news-text, .second-news-text, .third-news-text, .fourth-news-text{
   font-size: 18px;
   width: 215px;
-  height: 32px;
+  height: 40px;
   padding-left: 15px;
-  padding-top: 8px;
   background: #DBD8D7;
   font-family: myriadPro;
   position: absolute;
   top: 160px;
   left: 0px;
   transition: 2.5s;
+  margin: 0px;
 }
 .read-more{
   position: absolute;
   top: 160px;
   left: 0px;
   width: 215px;
-  height: 32px;
+  height: 40px;
   padding-right: 15px;
-  padding-top: 8px;
   background:  #DBD8D7;
   opacity: 0;
   font-family: myriadPro;
@@ -280,7 +276,7 @@ clear: both;
     top:20px;
     left: 0px;
     width: 215px;
-    height: 132px;
+    height: 140px;
     background: rgba(219,216,215, 0.7);
     font-size: 18px;
     color: #363E98;
@@ -289,7 +285,17 @@ clear: both;
 .hover:hover .read-more a {
   color: #363E98;
 }
+h3{
+  font-weight: normal;
+  display: inline;
 
+}
+h4{
+  font-weight: normal;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-right: 6px;
+}
 
 .footer{
   width: 100%;
